@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body, html { 
+  font-family: 'Raleway', sans-serif;
+  background: url("wallpaper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 101%;
+}
+
+#content, #header, #menubar, #footer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#header {
+  padding-top: 20px;
+}
+
+
+#header h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 5px gray;
+  margin-bottom: 10px;
+}
+
+#header h2 {
+  margin: 10px 0 0 4px;
+  padding-bottom: 20px;
+  color: dimgray; 
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0px;
+}
+
+#animate1 {
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end),
+  blinker 4s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes blinker {
+  0% {opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 1;}
+}
+
+#menubar {
+  width: 900px;
+  height: 52px;
+  padding: 0;
+  background: #303030;
+  box-shadow: 3px 3px darkgray;
+} 
+
+#menu li {
+  width: 130px;
+  float: left;
+  display: inline-block;
+  letter-spacing: 1px;
+  line-height: 52px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#menu a {
+  font-size: 14pt;
+  list-style: none;
+  color: white;
+}
+
+#menu li:hover {
+ /* padding-top: 3px;*/
+  font-weight: 600;
+  text-shadow: 1px 1px 20px white;
+  border-top: 3px solid darkgray;
+  line-height: 50px;
+}  
+
+#menu li.selected {
+  font-weight: 600;
+  text-shadow: 1px 1px 20px white;
+  border-top: 3px solid darkgray;
+  line-height: 50px;
+}
+
+#content {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  min-height: 290px;
+}
+#content h1 {
+  font-size: 28px;
+  text-shadow: 1px 1px 3px darkgray;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+#content p {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0.5px 0.5px 0.5px darkgray;
+  line-height: 24px;
+}
+#content_resume {
+  list-style: none;
+}
+#content_resume li::before {
+  color: gray;
+  content: "\2022"; 
+  font-size: 1.5em; 
+  padding-right: 0.8em; 
+  position: relative;
+  vertical-align: middle;
+  top: 0em; 
+}
+
+#disclaimer {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+#content_index {
+  max-width: 600px;
+}
+#content_about {
+  max-width: 600px;
+}
+#content img {
+  float: right;
+  padding-right: 10px;
+  margin-top: 20px;
+  width: 25%;
+  height: 25%;
+}
+#contact_content img {
+  float: left;
+  width: 18%;
+  height: 18%;
+  padding-left: 6px;
+  padding-right: 40px;
+}
+
+#content_resume {
+  position: relative;
+  max-width: 450px;
+}
+img#resumeimg {
+  padding-top: 10px;
+  padding-right: 40px;
+  width: 40%;
+  height: 40%;
+}
+
+#footer, #footer a {
+  word-spacing: 10px;
+  font-size: 12px;
+  color: gray;
+  text-shadow: 0.5px 0.5px 0.5px darkgray;
+}
+
+#footer {
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+hr {
+  border:none;
+  border-top: 2px solid gray;
+}
+
+.projects {
+  padding-top: 30px;
+}
+.projects h3 {
+  font-size: 14px;
+}
+.projects a {
+  display: inline-grid;
+  height: 200px;
+  width: 200px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  box-shadow: 2px 2px gray;
+  border-radius: 10px;
+  color: transparent;
+}
+
+#umreu {
+  background-image: url("umreu.PNG");
+  background-size: cover;
+  border-radius: 10px;
+}
+#hab2017 {
+  background-image: url("hab2017.png");
+  background-size: cover;
+  border-radius: 10px;
+}
+#hab2018 {
+  background-image: url("hab2018.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+#origami {
+  background-image: url("origami.jpg");
+  background-size: cover;
+  border-radius: 10px;
+}
+.rectangle {
+  height: 110px;
+  padding: 10px;
+  margin-top: 30px;
+}
+.projects a:hover .rectangle {
+
+  opacity: 1;
+  color: white;
+  font-weight: 700;
+  background-color: black;
+}
+.projects a:hover {
+  opacity: 0.7;
+}
+
+.button {
+  font-weight: 700;
+  text-shadow: 1px 1px 0.1px gray;
+  font-size: 18px;
+  margin-top: 20px;
+  display: inline-block;
+  width: 160px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  margin-right: 15px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 3px 3px lightgray;
+  background: linear-gradient(-180deg, gray, lightgray);
+}
+.button:hover {
+  background: linear-gradient(-180deg, #303030, gray);
+  color: white;
+}
+
+.media_button {
+  margin-top: 20px;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  margin-right: 15px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 3px 3px lightgray;
+}
+#github {
+  background-image: url("github.png");
+  background-size: cover;
+}
+#facebook {
+  background-image: url("facebook.png");
+  background-size: cover;
+}
+#linkedin {
+  background-image: url("linkedin.png");
+  background-size: cover;
+}
+
+/*ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover {
+  color: white;
+  background: red;
+}
+*/
